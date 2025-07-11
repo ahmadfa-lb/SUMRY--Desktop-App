@@ -1,0 +1,79 @@
+/* @import "tailwindcss"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base { */
+  /* html, body {
+    @apply h-full;
+    } */
+    
+    :root {
+      --dark-green: #166936;
+      --orange: #F47125;
+      --light-green: #2A7E4D;
+      --light-green-2: #6C937C;
+      --light-gray: #353B41;
+      --red: #dc2626;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--light-gray);
+      /* color: #353B41; */
+    }
+
+    /* Custom Scrollbar Styles */
+    /* Webkit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--light-green-2);
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--light-green);
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: #f1f1f1;
+    }
+
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--light-green-2) #f1f1f1;
+    }
+
+    /* For dark mode support (optional) */
+    @media (prefers-color-scheme: dark) {
+      ::-webkit-scrollbar-track {
+        background: #2d2d2d;
+      }
+      
+      ::-webkit-scrollbar-corner {
+        background: #2d2d2d;
+      }
+      
+      * {
+        scrollbar-color: var(--light-green-2) #2d2d2d;
+      }
+    }
+  /* }  */
+/*
+@layer components {
+  .btn-[var(--light-green)] {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md;
+  }
+} */
