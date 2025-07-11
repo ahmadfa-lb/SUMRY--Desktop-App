@@ -70,7 +70,7 @@ Robust data control tools:
 ## 📸 Screenshots
 
 ### 🪟 Intro Page
-![Intro Page](screenshots/inrto.png)
+![Intro Page](screenshots/intro.png)
 
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
